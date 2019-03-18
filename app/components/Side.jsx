@@ -11,13 +11,6 @@ class Side extends React.Component {
     super(props);
   }
 
-  // handleChangeSide(side) {
-  //   console.log('[Side] handleChangeSide -> ' + side);
-  //   this.props.history.replace('/' + side);
-  //   //this.props.changeSide(side);
-  //   //replace('/' + side);
-  // }
-
   componentDidMount() {
     console.log('[Side] componentDidMount');
     console.dir(this.props);

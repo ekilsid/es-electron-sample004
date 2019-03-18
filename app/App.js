@@ -4,7 +4,6 @@ import { ConnectedRouter } from 'connected-react-router'
 import { Route, Switch } from 'react-router'
 import { HashRouter, BrowserRouter} from 'react-router-dom';
 
-import Header from './components/Header';
 import ScreenFunc1 from './components/ScreenFunc1';
 import ScreenFunc2 from './components/ScreenFunc2';
 import ScreenFunc3 from './components/ScreenFunc3';

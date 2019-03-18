@@ -10,7 +10,7 @@ export default class ScreenFunc1 extends React.Component {
     return (
       <div className="contents container">
         <header className="toolbar toolbar-header">
-          <h1 className="title">Header with actions</h1>
+          <h1 className="title">Function1 actions</h1>
 
           <div className="toolbar-actions">
             <div className="btn-group">
@@ -26,16 +26,11 @@ export default class ScreenFunc1 extends React.Component {
               <span className="icon icon-home icon-text" />
               Filters
             </button>
-
-            <button className="btn btn-default btn-dropdown pull-right">
-              <span className="icon icon-megaphone" />
-            </button>
           </div>
         </header>
 
         <div className="window-content">
           <div className="pane-group">
-            <div className="pane-mini sidebar pane-side">{/* <Side /> */}</div>
             <div className="pane-mini pane-menu">
               <nav className="nav-group">
                 <h5 className="nav-group-title">Func1 menu</h5>
@@ -44,7 +39,7 @@ export default class ScreenFunc1 extends React.Component {
                 <a className="nav-group-item">Function1-3</a>
               </nav>
             </div>
-            <div className="pane">333</div>
+            <div className="pane pane-content">This is function1 contents</div>
           </div>
         </div>
       </div>
