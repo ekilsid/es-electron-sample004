@@ -18,7 +18,7 @@ const Home = ({ history }) => {
   return (
     <ConnectedRouter history={history}>
       <HashRouter>
-      <div className="layout container">
+      <div className="layout-container">
         <Side history={history} />
         <Switch>
           <Route path="/func2" component={ScreenFunc2} />

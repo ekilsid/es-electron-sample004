@@ -1,14 +1,12 @@
 import React from 'react';
 
-import Side from './Side';
-
 export default class ScreenFunc2 extends React.Component {
   render() {
     console.log('[ScreenFunc2] render');
     console.log(window.location.pathname);
 
     return (
-      <div className="contents container">
+      <div className="contents-container">
         <header className="toolbar toolbar-header">
           <h1 className="title">Function2 actions</h1>
 

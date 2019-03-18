@@ -1,14 +1,12 @@
 import React from 'react';
 
-import Side from './Side';
-
 export default class ScreenSetting extends React.Component {
   render() {
     console.log('[ScreenSetting] render');
     console.log(window.location.pathname);
 
     return (
-      <div className="contents container">
+      <div className="contents-container">
         <div className="window-content">
           <div className="pane-group">
             <div className="pane-mini pane-menu">

@@ -4,8 +4,6 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { push, replace } from 'connected-react-router';
 
-import * as headerModule from '../modules/Header';
-
 class Side extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +13,7 @@ class Side extends React.Component {
     console.log('[Side] componentDidMount');
     console.dir(this.props);
     //this.props.history.replace('/' + this.props.header.side);
-    this.props.history.push('/');
+    //this.props.history.replace('/');
   }
 
   render() {
@@ -30,30 +28,30 @@ class Side extends React.Component {
       header.side === 'funcS';
 
     return (
-      <div className="side container">
+      <div className="side-container">
         <div
-          className={`side item ${!isSide && 'active'}`}
+          className={`side-item ${!isSide && 'active'}`}
           onClick={() => history.replace('/func1')}
         >
           <span className="icon icon-home icon-side" />
         </div>
 
         <div
-          className={`side item ${header.side === 'func2' && 'active'}`}
+          className={`side-item ${header.side === 'func2' && 'active'}`}
           onClick={() => history.replace('/func2')}
         >
           <span className="icon icon-folder icon-side" />
         </div>
 
         <div
-          className={`side item ${header.side === 'func3' && 'active'}`}
+          className={`side-item ${header.side === 'func3' && 'active'}`}
           onClick={() => history.replace('/func3')}
         >
           <span className="icon icon-cloud icon-side" />
         </div>
 
         <div
-          className={`side item ${header.side === 'funcS' && 'active'}`}
+          className={`side-item ${header.side === 'funcS' && 'active'}`}
           onClick={() => history.push('/funcS')}
         >
           <span className="icon icon-cog icon-side" />
