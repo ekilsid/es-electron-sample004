@@ -1,0 +1,10 @@
+#directories
+node_modules/
+/dist/
+/release/
+/.vscode/
+
+#files
+*.tgz
+*.log
+.DS_Store
