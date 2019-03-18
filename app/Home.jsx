@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ConnectedRouter } from 'connected-react-router'
-import { Route, Switch } from 'react-router'
-import { HashRouter, BrowserRouter} from 'react-router-dom';
+import { Route, Switch, HashRouter} from 'react-router-dom';
 
 import ScreenFunc1 from './components/ScreenFunc1';
 import ScreenFunc2 from './components/ScreenFunc2';
@@ -10,9 +9,9 @@ import ScreenFunc3 from './components/ScreenFunc3';
 import ScreenSetting from './components/ScreenSetting';
 import Side from './components/Side';
 
-const App = ({ history }) => {
+const Home = ({ history }) => {
 
-  console.log('[App] render');
+  console.log('[Home] render');
   console.dir(history);
   console.log(window.location.pathname);
 
@@ -33,8 +32,8 @@ const App = ({ history }) => {
   )
 }
 
-App.propTypes = {
+Home.propTypes = {
   history: PropTypes.object,
 }
 
-export default App
+export default Home
