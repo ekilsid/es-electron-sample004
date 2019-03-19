@@ -2,18 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { push, replace } from 'connected-react-router';
 
 class Side extends React.Component {
   constructor(props) {
     super(props);
-  }
-
-  componentDidMount() {
-    console.log('[Side] componentDidMount');
-    console.dir(this.props);
-    //this.props.history.replace('/' + this.props.header.side);
-    //this.props.history.replace('/');
   }
 
   render() {
@@ -66,12 +58,6 @@ Side.propTypes = {
   history: PropTypes.object.isRequired
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    changeSide: side => dispatch(headerModule.changeSide(side))
-  };
-};
-
 const mapStateToProps = state => {
   console.log('[Side] mapStateToProps');
   console.dir(state);
@@ -80,10 +66,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default withRouter(
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(Side)
-);
-//export default connect(mapStateToProps, mapDispatchToProps)(Side);
+export default withRouter(connect(mapStateToProps)(Side));

@@ -1,7 +1,7 @@
 {
-    "name": "es-electron-boilerplate",
+    "name": "es-electron-sample004",
     "version": "1.0.0",
-    "description": "Electron application boilerplate",
+    "description": "Electron application sample004",
     "main": "./dist/main.js",
     "scripts": {
         "watch": "webpack --watch --mode=development",
@@ -21,8 +21,7 @@
         "react-redux": "^6.0.1",
         "react-router": "^4.3.1",
         "react-router-dom": "^4.3.1",
-        "redux": "^4.0.1",
-        "styled-components": "^4.1.3"
+        "redux": "^4.0.1"
     },
     "devDependencies": {
         "@babel/core": "^7.3.3",
@@ -44,8 +43,8 @@
         "webpack-node-externals": "^1.7.2"
     },
     "build": {
-        "productName": "Es-boilerplate",
-        "appId": "com.ekilsid.electron.boilerplate",
+        "productName": "Es-Sample004",
+        "appId": "com.ekilsid.electron.sample004",
         "directories": {
             "output": "release"
         },
